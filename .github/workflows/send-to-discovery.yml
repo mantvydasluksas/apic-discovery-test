@@ -29,6 +29,5 @@ jobs:
         git_diff: ${{ steps.difference-output.outputs.action_updates }}
     - name: Display the action-result
       run: |
-        using: 'node20'
         echo "Result of the action: ${{ steps.discover-apis.outputs.action-result }}"
         echo "End"  
