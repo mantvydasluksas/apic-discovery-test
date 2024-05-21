@@ -13,6 +13,7 @@ with the parameters supplied
 ```
 with:
   api_host: ${{ env.API_HOST }}
+  platform_api_prefix: ${{ env.PLATFORM_API_PREFIX }}
   provider_org: ${{ env.PROVIDER_ORG }}
   api_key: ${{ secrets.apicApikey }}
   if: env.API_FILES
