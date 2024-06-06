@@ -6,7 +6,6 @@ env:
   API_HOST: apps.dw-rosa-01.oweu.p1.openshiftapps.com
   # platform_api_prefix is not required to change for ApiConnect on Cloud
   PLATFORM_API_PREFIX: production-mgmt-platform-api-apic
-  INSECURE_SKIP_TLS_VERIFY: true
   PROVIDER_ORG: e2etest1
   #API_FILES: APIfolder/uber-api.json
   API_FOLDERS: APIfolder,APIfolderTwo
@@ -25,7 +24,6 @@ jobs:
       with:
         api_host: ${{ env.API_HOST }}
         platform_api_prefix: ${{ env.PLATFORM_API_PREFIX }}
-        insecure_skip_tls_verify: ${{ INSECURE_SKIP_TLS_VERIFY }}
         provider_org: ${{ env.PROVIDER_ORG }}
         api_key: ${{ secrets.apicApikey }}
         api_files: ${{ env.API_FILES }}
