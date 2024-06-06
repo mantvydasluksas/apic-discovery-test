@@ -25,7 +25,7 @@ jobs:
       with:
         api_host: ${{ env.API_HOST }}
         platform_api_prefix: ${{ env.PLATFORM_API_PREFIX }}
-        insecure_skip_tls_verify: ${{ INSECURE_SKIP_TLS_VERIFY }}
+        insecure_skip_tls_verify: ${{ env.INSECURE_SKIP_TLS_VERIFY }}
         provider_org: ${{ env.PROVIDER_ORG }}
         api_key: ${{ secrets.apicApikey }}
         api_files: ${{ env.API_FILES }}
