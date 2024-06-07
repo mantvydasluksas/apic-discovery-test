@@ -8,8 +8,8 @@ env:
   PLATFORM_API_PREFIX: production-mgmt-platform-api-apic
   INSECURE_SKIP_TLS_VERIFY: True
   PROVIDER_ORG: e2etest1
-  #API_FILES: APIfolder/uber-api.json
-  API_FOLDERS: APIfolder,APIfolderTwo
+  API_FILES: MYAPIS/api-with-examples.yaml
+  #API_FOLDERS: APIfolder,APIfolderTwo
 
 jobs:
   run-discovery:
@@ -20,7 +20,7 @@ jobs:
       id: difference-output
       run: |
         echo "action_updates=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.before }} ${{ github.sha }} | xargs)" >> $GITHUB_OUTPUT
-    - uses: ibm-apiconnect/apic-discovery-action@ng/skiptls 
+    - uses: ibm-apiconnect/apic-discovery-action@main 
       id: discover-apis
       with:
         api_host: ${{ env.API_HOST }}
