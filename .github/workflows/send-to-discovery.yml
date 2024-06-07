@@ -8,7 +8,7 @@ env:
   PLATFORM_API_PREFIX: production-mgmt-platform-api-apic
   INSECURE_SKIP_TLS_VERIFY: True
   PROVIDER_ORG: e2etest1
-  API_FILES: MYAPIS/api-with-examples.yaml
+  API_FILES: APIfolder/api-with-examples.yaml
   #API_FOLDERS: APIfolder,APIfolderTwo
 
 jobs:
