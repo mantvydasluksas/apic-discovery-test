@@ -3,9 +3,9 @@ name: Send Discovered API to ApiConnect
 on: [pull_request, workflow_dispatch, push]
 
 env:
-  API_HOST: apps.e2etest-sanity-ocp.cp.fyre.ibm.com
+  API_HOST: e2etest-sanity-ocp.cp.fyre.ibm.com
   # platform_api_prefix is not required to change for ApiConnect on Cloud
-  PLATFORM_API_PREFIX: production-mgmt-platform-api-apic
+  PLATFORM_API_PREFIX: production-mgmt-platform-api-apic.apps
   PROVIDER_ORG: api-test
   API_FILES: APIfolder/api-with-examples.yaml
   #API_FOLDERS: APIfolder,APIfolderTwo
