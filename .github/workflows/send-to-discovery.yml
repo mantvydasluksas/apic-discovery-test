@@ -7,6 +7,7 @@ env:
   # platform_api_prefix is not required to change for ApiConnect on Cloud
   PLATFORM_API_PREFIX: production-mgmt-platform-api-apic.apps
   PROVIDER_ORG: api-test
+  INSECURE_SKIP_TLS_VERIFY: True
   API_FILES: APIfolder/api-with-examples.yaml
   #API_FOLDERS: APIfolder,APIfolderTwo
 
@@ -25,6 +26,7 @@ jobs:
         api_host: ${{ env.API_HOST }}
         platform_api_prefix: ${{ env.PLATFORM_API_PREFIX }}
         provider_org: ${{ env.PROVIDER_ORG }}
+        insecure_skip_tls_verify: ${{ env.INSECURE_SKIP_TLS_VERIFY }}
         api_key: ${{ secrets.apicApikey }}
         api_files: ${{ env.API_FILES }}
         api_folders: ${{ env.API_FOLDERS }}
