@@ -6,7 +6,7 @@ env:
   API_HOST: apps.67b1ca818535348782f05e90.ap1.techzone.ibm.com
   # platform_api_prefix is not required to change for ApiConnect on Cloud
   PLATFORM_API_PREFIX: apim-demo-mgmt-platform-api-tools
-  PROVIDER_ORG: test-provider-org
+  PROVIDER_ORG: cp4i-demo-org
   INSECURE_SKIP_TLS_VERIFY: True
   API_FILES: APIfolder/api-with-examples.yaml
   #API_FOLDERS: APIfolder,APIfolderTwo
