@@ -3,7 +3,7 @@ name: Sync Discovered API with ApiConnect
 on: [pull_request, workflow_dispatch, push]
 
 env:
-  API_HOST: d-j02.apiconnect.dev.automation.ibm.com
+  API_HOST: fyre-ci-215203-master.fyre.ibm.com
   # platform_api_prefix is not required to change for ApiConnect on Cloud
   PLATFORM_API_PREFIX: platform-api
   PROVIDER_ORG: niraimathi
